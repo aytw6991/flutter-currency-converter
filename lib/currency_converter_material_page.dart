@@ -12,6 +12,7 @@ class _CurrencyConverterMaterialPage
   
   double result = 0;
   double exchangeRate = 142.39;
+  final Color white = Color(0xFFFCFCFC);
   final TextEditingController textEditingController = TextEditingController();
 
   void convertCurrency() {
@@ -22,9 +23,16 @@ class _CurrencyConverterMaterialPage
       result = double.parse(input) * exchangeRate;
     });
     } catch (e) {
-      print('Please enter a valid number');
+      print('Please enter a valid number!');
     }
   }
+
+  @override
+  void dispose() {
+    textEditingController.dispose();
+    super.dispose();
+  }
+  
 
   @override
   Widget build(BuildContext context) {
@@ -38,13 +46,14 @@ class _CurrencyConverterMaterialPage
       );
 
     return Scaffold(
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Color(0xFFFCFCFC),
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
         title: const Text('Currency Converter'),
         titleTextStyle: TextStyle(
-          color: Colors.white,
-          fontSize: 25,
+          color: Color(0xFF161616),
+          fontSize: 30,
+          fontFamily: 'WorkSans',
+          fontWeight: FontWeight.w900
         ),
         centerTitle: true,
       ),
@@ -57,7 +66,7 @@ class _CurrencyConverterMaterialPage
               Text(
                 'NPR ${result != 0 ? result.toStringAsFixed(2) : 0}',
                 style: const TextStyle(
-                  color: Color.fromARGB(255, 255, 255, 255),
+                  color: Color(0xFF161616),
                   fontSize: 55,
                   fontWeight: FontWeight.bold
                 ),
@@ -71,7 +80,7 @@ class _CurrencyConverterMaterialPage
                   color: Colors.black
                 ),
                 decoration: InputDecoration(
-                  hintText: 'Please enter the amount in USD',
+                  hintText: 'Enter the amount in USD',
                   hintStyle: TextStyle(
                     color: Colors.black
                   ),
