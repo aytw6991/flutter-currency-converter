@@ -1,4 +1,4 @@
-import 'package:currency_converter/currency_converter_material_page.dart';
+import 'package:currency_converter/currency_converter_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -11,16 +11,26 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Currency Converter',
       theme: ThemeData(
+        colorSchemeSeed: Colors.lime,
         fontFamily: 'WorkSans',
         appBarTheme: const AppBarTheme(
-          backgroundColor: Color(0xFFFCFCFC),
           titleTextStyle: TextStyle(
-            fontSize: 35,
-            color: Color(0xFF161616),
+            color: Color(0xFFF0F4C3),
+            fontFamily: 'WorkSans',
+            fontSize: 33,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        inputDecorationTheme: const InputDecorationTheme(
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Color(0xFFAFB42B)),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Color(0xFFDCE775)),
           ),
         ),
       ),
-      home: CurrencyConverterMaterialPage(),
+      home: CurrencyConverterPage(title: 'Currency Converter'),
     );
   }
 }
