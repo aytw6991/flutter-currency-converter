@@ -15,9 +15,15 @@ class _CurrencyConverterMaterialPage
   final TextEditingController textEditingController = TextEditingController();
 
   void convertCurrency() {
-    setState(() {
-      result = double.parse(textEditingController.text) * exchangeRate;
+    try {
+      String input = textEditingController.text.replaceAll(",", "");
+      print(input);
+      setState(() {
+      result = double.parse(input) * exchangeRate;
     });
+    } catch (e) {
+      print('Please enter a valid number');
+    }
   }
 
   @override
