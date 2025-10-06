@@ -1,5 +1,9 @@
 # 💱 Flutter Currency Converter
 
+![Flutter](https://img.shields.io/badge/Flutter-blue?logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Learning-brightgreen)
+
 A simple **Currency Converter App** built with Flutter that converts **USD → NPR** using a static conversion rate defined in the code.  
 This project is meant purely for learning and practicing the **basics of Flutter** — layout, widgets, state management, and UI structure.
 
