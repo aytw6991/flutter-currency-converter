@@ -30,7 +30,7 @@ This app demonstrates:
 
 Here’s a list of features you can build as you learn more Flutter:
 
-- [ ] Use exceptional handling
+- [X] Use exceptional handling
 - [ ] Fetch live exchange rate using an API (e.g., ExchangeRate API)
 - [ ] Add conversion for multiple currencies (EUR, GBP, INR, etc.)
 - [ ] Save conversion history
