@@ -85,5 +85,11 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
+  fonts:
+    - family: WorkSans
+      fonts:
+        - asset: fonts/WorkSans.ttf
+        - asset: fonts/WorkSans-Italic.ttf
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
