@@ -28,8 +28,6 @@ This app demonstrates:
 
 ## 🚀 Features To Add Later
 
-Here’s a list of features you can build as you learn more Flutter:
-
 - [X] Use exceptional handling
 - [ ] Display proper messages for users
 - [ ] Fetch live exchange rate using an API (e.g., ExchangeRate API)
